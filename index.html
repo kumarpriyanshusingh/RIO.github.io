@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate monkey</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background1">
+        <div class="r_image">
+            <img class="f-backround-img" src="./imgaes/R.png" alt="">
+        </div>
+        <div class="i_image">
+            <img class="f-backround-img" src="./imgaes/i.png" alt="">
+        </div>
+        <div class="o_image">
+            <img class="f-backround-img" src="./imgaes/o.png" alt="">
+        </div>
+        <div class="2_image">
+            <img class="f-backround-img" src="./imgaes/2.png" alt="">
+        </div>
+    </div>
+
+    <div class="background_img">
+        <div class="mokey" id="mokey1">
+            <img class="monkey-img" src="./imgaes/mono.png" alt="">
+        </div>
+        <div class="logo">
+            <img class="logo_im" src="./imgaes/logo-date.png" alt="">
+        </div>
+        <section class="tree_img">
+            <div class="left_tree_img">
+                <img class="tree" src="./imgaes/rama1.png" alt="">
+            </div>
+            <div class="right_tree_img">
+                <img class="tree" src="./imgaes/rama2.png" alt="">
+            </div>
+        </section>
+        <div class="birds">
+            <img class="birds_img" src="./imgaes/birds.png" alt="">
+        </div>
+        <div class="center_img">
+            <img class="cenimg" src="./imgaes/cast.png" alt="">
+        </div>
+        <div class="video_text">
+            <img class="text_img" src="./imgaes/button.png" alt="">
+            <div id="text_1" class="text1 bounce-text">
+                <h1>VIDEO</h1>
+            </div>
+        </div>
+        <div class="photos_text">
+            <img class="text_img" src="./imgaes/button.png" alt="">
+            <div id="text_2" class="text2 bounce-text">
+                <h1>PHOTOS</h1>
+            </div>
+        </div>
+        <div class="bottom_logo">
+            <img class="b_logo" src="./imgaes/footer-logos.png" alt="">
+        </div>
+    </div>
+    <!-- -------------javascript-code------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+    <script>
+        var t1 = new TimelineMax();
+        t1.to('.mokey', 1, {
+            rotation: 20,
+            transformOrigin: 'center top',
+            repeat: -1,
+            yoyo: true,
+            ease: Power2.easeInOut,
+          
+        });
+
+
+        var text_2 = document.getElementById("text_2");
+        TweenMax.fromTo(text_2, .3, {
+            visible: true,
+            scale: 1  },
+       {
+            scale: 1.2,
+            repeat: -1,
+            ease: "bounce.out",
+            yoyo: true
+        });
+
+        var text_1 = document.getElementById("text_1");
+        TweenMax.fromTo(text_1, .3, {
+            visible: true,
+            scale: 1
+        }, {
+            scale: 1.2,
+            repeat: -1,
+            ease: "bounce.out",
+            yoyo: true
+        });
+
+        TweenMax.set('.r_image, .i_image, .o_image, .2_image', {
+            autoAlpha: 1,
+            scale: 0,
+        });
+        TweenMax.set('.background_img', {
+            autoAlpha: 0,
+            display: "none"
+        });
+        var t1 = new TimelineMax();
+        t1.to('.r_image', 0.5, {
+                autoAlpha: 1,
+                scale: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.i_image', 0.5, {
+                autoAlpha: 1,
+                scale: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.o_image', 0.5, {
+                autoAlpha: 1,
+                scale: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.2_image', 0.5, {
+                autoAlpha: 1,
+                scale: 1,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.r_image', 0.3, {
+                autoAlpha: 0,
+                scale: 0,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.i_image', 0.3, {
+                autoAlpha: 0,
+                scale: 0,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.o_image', 0.3, {
+                autoAlpha: 0,
+                scale: 0,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .to('.2_image', 0.3, {
+                autoAlpha: 0,
+                scale: 0,
+                ease: Elastic.easeOut.config(1, 0.3),
+
+            }, '-=0.2')
+            .duration('5')
+            .to('.background_img', 0.03, {
+                autoAlpha: 1,
+                display: "block"
+            }, 'same-=0.25')
+            .to('.background1', 0.03, {
+                autoAlpha: 0,
+                display: 'none'
+            }, 'same-=0.25');
+    </script>
+</body>
+
+</html>

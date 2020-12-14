@@ -1,0 +1,171 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.background_img {
+    background-image: url("../imgaes/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.tree_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_tree_img {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: scale(1.2);
+}
+
+.right_tree_img {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    transform: scale(1.2);
+
+}
+
+.tree {
+    max-width: 100%;
+    z-index: 2;
+}
+
+.logo_im {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.center_img {
+    position: absolute;
+    bottom: -10%;
+    left: 18%;
+    transform: translate(50%);
+    height: 30vw;
+    width: 30vw;
+    z-index: 1;
+}
+
+.cenimg {
+    width: 100%;
+    height: 100%;
+}
+
+.mokey {
+    position: absolute;
+    top: 3%;
+    right: 23%;
+    height: 25vh;
+    z-index: 4;
+    transform: rotate(-20deg);
+}
+
+.monkey-img {
+    height: auto;
+    width: 100%;
+    transform: scale(1.3);
+}
+
+.video_text {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    transform: scale(1.3);
+}
+
+.photos_text {
+    position: absolute;
+    right: 12%;
+    bottom: 10%;
+    transform: scale(1.3);
+}
+
+.text_img {
+    height: 100%;
+    width: 100%;
+}
+
+.text1 {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    z-index: 5;
+}
+
+.text2 {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    z-index: 6;
+}
+
+.bounce-text {
+    position: absolute;
+    left: 25%;
+    font-size: 20px;
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+    letter-spacing: 1.5px;
+    animation-duration: 2s;
+  
+}
+
+.birds {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    z-index: 7;
+    transform: scale(1.5);
+}
+
+.birds_img {
+    height: 100%;
+    width: 100%;
+}
+
+.bottom_logo {
+    position: absolute;
+    bottom: 2%;
+    left: 40%;
+    z-index: 1;
+    transform: scale(1.5);
+}
+
+.b_logo {
+    height: 100%;
+    width: 100%;
+}
+
+.background1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #770b5c;
+
+}
+
+.f-backround-img {
+    height: 100%;
+    max-width: 100%;
+}
